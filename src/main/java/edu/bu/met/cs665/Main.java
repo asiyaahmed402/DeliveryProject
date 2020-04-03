@@ -42,9 +42,7 @@ public class Main {
     shopSystem.registerObserver(driver8);
     shopSystem.registerObserver(driver9);
 
-    // I just have 5 shops
-    // Order(int orderId, int homeDistance, int shopNo, List<Product>
-    // products,boolean needFreezer )
+    
     Order order1 = new Order(1, 6, 2, null, false);
     Order order2 = new Order(2, 5, 5, null, true);
     Order order3 = new Order(3, 10, 1, null, false);
@@ -70,19 +68,32 @@ public class Main {
     shopSystem.setOrderData(order10);
     shopSystem.setOrderData(order11);
     shopSystem.setOrderData(order12);
-    // display the first status of the drivers
+
+    /**
+     * display the first status of the drivers
+     */
+
     shopSystem.displayAllDrivers();
     System.out.println("*****************************************************");
     shopSystem.displayAllOrder();
     System.out.println("*****************************************************");
-    //Select driver for each order
+
+    /**
+     * Select driver for each order
+     */
     shopSystem.selectThisDriver();
     System.out.println("*****************************************************");
-    //track all drivers status
+
+    /**
+     * track all drivers status
+     */
     shopSystem.trackDriver();
     System.out.println("*****************************************************");
 
-    //print the final status for drivers and orders
+    /**
+     * print the final status for drivers and orders
+     */
+
     shopSystem.displayAllDrivers();
     System.out.println("*****************************************************");
     shopSystem.displayAllOrder();

@@ -4,6 +4,11 @@ import edu.bu.met.cs665.Inventory.*;
 
 import java.util.*;
 
+/**
+ * @author Asiya Ahmed
+ * This class represents the Order in the in the observable
+ * */
+
 public class Order {
 
     protected int orderId;

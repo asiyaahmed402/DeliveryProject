@@ -52,16 +52,6 @@ public class DeliveryDriver implements DriverObserver , DriverStatusObserver {
     }
 
 
-/*		@Override
-		public void updateAll(int orderId, int homeDistance, int shopNo, boolean needFreezer , String orderStatus) {
-
-			this.orderId = orderId;
-			this.homeDistance = homeDistance;
-			this.shopNo = shopNo;
-			this.OrderNeedFreezer = needFreezer;
-			this.orderStatus = orderStatus;
-
-		}*/
 
     @Override
     public void update(int orderId, int shopNo , int totalDistance , String status ) {

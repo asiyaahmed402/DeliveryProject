@@ -155,7 +155,9 @@ public class ShopSystem implements ShopSubject{
     }
 
 
-    // update driver data
+    /**
+     * Update Driver data
+     */
     public void updateDriver(int driverId, int totalDistance, int orderNumber, int shopNumber) {
         // TODO Auto-generated method stub
         for (DriverObserver driverObserver : observerList) {
@@ -169,6 +171,10 @@ public class ShopSystem implements ShopSubject{
         }
 
     }
+
+    /**
+     *  This method Tracks Driver
+     */
 
     // track all driver
     public void trackDriver() {
@@ -197,8 +203,10 @@ public class ShopSystem implements ShopSubject{
             System.out.println("--------------------------------------------------");
         }
     }
+    /**
+     * Display all driver data at any time
+     */
 
-    // Display all driver data at any time
     public void displayAllDrivers() {
         for (DriverObserver driverObserver : observerList) {
             int distance = ((DeliveryDriver) driverObserver).getDriverDistance();
@@ -211,8 +219,10 @@ public class ShopSystem implements ShopSubject{
         }
 
     }
+    /**
+     * Display order list data
+     */
 
-    // Display Order list data
     public void displayAllOrder() {
         for (Order order : orderList) {
             System.out.println("Order " + order.getOrderId() + " it is " + order.getStatus());
