@@ -1,6 +1,82 @@
-# Project Template
+# Delivery Project
+This program represent a consortium of shops in a large city that established an agreement with local independent van and taxi drivers to deliver products from the stores to the customer destinations. When a store gets a product delivery order, it creates a request which is broadcast to relevant drivers within a certain distance from the store. A driver is then assigned based on the closest driver distance to the shop.
 
-This is a Java Maven Project Template
+
+## Features
+-This project was built using Observer Design Pattern.
+
+-using this pattern help to solve tightly coupled between objects.
+
+-when we have one-to-many dependency.
+
+-This can ensure that when one object changes state an open-ended number
+
+-of dependent objects are updated automatically.
+
+-This makes subject and observers loosely coupled.
+
+-Subject and observers have no explicit knowledge of each other.
+
+-Observers can be added and removed independently at run-time.
+
+-This add flexibility to the program
+
+
+
+##Details
+
+1-At the binging orders data is registered in the shop system.
+
+2- the order products were not implemented it just passed as null for now.
+
+3- Every new driver is added to the shop system so he will be notified for the new order.
+
+4-The diver will accept all order assign to him just if he is not busy.
+
+5- The shop system choose the driver with the less distance to travel.
+
+6- The less distance is equal to driver distance from store with the customer distance.
+
+7- The driver will be updated with all the order data the he will carry.
+
+8- Driver status is "available" if he can accept order and "in transit" . if he is in his way to deliver an order.
+
+9- If all drivers are busy the order will wait until a one driver is available.
+
+10- the shop system track all driver’s status in each time tick.
+
+##Future
+
+1- The project can have more functionality if the user can place his order.
+
+2- The shop system could search for the nearest store to prepare the order.
+
+3- It can have GBS location for the drivers.
+
+More features can be added to the (Product):
+
+1- Each product has price.
+
+2- The birthday gift is free and it just assigned to birthday person.
+
+3- User cannot get more products from the same kind.
+
+4- Assume there is enough products in each stores.
+
+5- All the stores have the same products.
+
+6- Food class has status (if is frozen)
+
+7- For warm food I assumed all driver has a delivery bag so no warry about it.
+
+
+
+
+
+
+
+
+
 
 
 # How to compile the project
