@@ -22,40 +22,19 @@ the shop system choose the driver with the less distance to travel
 
 5- The driver will be updated with all the order data the he will carry.
 
-8- Available status: if driver accepts order 
-9- In-transit status: If the driver is on their way to deliver the order
+6- Available status: if driver accepts order 
+7- In-transit status: If the driver is on their way to deliver the order
 
-10- If all drivers are busy the order will wait until a one driver is available.
-
-
-##Future
-
-1- The project can have more functionality if the user can place his order.
-
-2- The shop system could search for the nearest store to prepare the order.
-
-3- It can have GBS location for the drivers.
-
-More features can be added to the (Product):
-
-1- Each product has price.
-
-2- The birthday gift is free and it just assigned to birthday person.
-
-3- User cannot get more products from the same kind.
-
-4- Assume there is enough products in each stores.
-
-5- All the stores have the same products.
-
-6- Food class has status (if is frozen)
-
-7- For warm food I assumed all driver has a delivery bag so no warry about it.
+8- If all drivers are busy the order will wait until a one driver is available.
 
 
+##Future Implementation Suggestions 
 
+1- This project should allow users to place their own orders
 
+2- Each product or item in every "shop" should have a price in the system
 
+3- Special discounts should be available for certain products 
 
 
 
