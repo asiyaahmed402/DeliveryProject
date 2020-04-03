@@ -1,49 +1,32 @@
 # Delivery Project
-This program represent a consortium of shops in a large city that established an agreement with local independent van and taxi drivers to deliver products from the stores to the customer destinations. When a store gets a product delivery order, it creates a request which is broadcast to relevant drivers within a certain distance from the store. A driver is then assigned based on the closest driver distance to the shop.
-
+This program represent a consortium of shops that have established an 
+agreement with local independent drivers (sedan and sprinter vans) to 
+deliver products from various local businesses to their customers
 
 ## Features
--This project was built using Observer Design Pattern.
-
--using this pattern help to solve tightly coupled between objects.
-
--when we have one-to-many dependency.
-
--This can ensure that when one object changes state an open-ended number
-
--of dependent objects are updated automatically.
-
--This makes subject and observers loosely coupled.
-
--Subject and observers have no explicit knowledge of each other.
-
--Observers can be added and removed independently at run-time.
-
--This add flexibility to the program
-
-
+-This project was built using Observer Design Pattern. Observer pattern helps
+resolve tightly coupling between objects. Here we have a one-to-many dependency 
+-This pattern adds flexibility to the program 
+-Observers can be added and removed at run-time
+-When one object changes its state, dependent objects will be updated automatically 
+-Subject and observers don't have explicit knowledge of each other 
 
 ##Details
 
-1-At the binging orders data is registered in the shop system.
+1-Orders data is registered in the shop system while the order products were not implemented it just passed as null for now.
 
-2- the order products were not implemented it just passed as null for now.
+3- Every new driver that is  added to the shop system will be notified of the new order.
 
-3- Every new driver is added to the shop system so he will be notified for the new order.
+4-Drivers will accept all order assign to them if they are not busy and
+the shop system choose the driver with the less distance to travel
 
-4-The diver will accept all order assign to him just if he is not busy.
+5- The driver will be updated with all the order data the he will carry.
 
-5- The shop system choose the driver with the less distance to travel.
+8- Available status: if driver accepts order 
+9- In-transit status: If the driver is on their way to deliver the order
 
-6- The less distance is equal to driver distance from store with the customer distance.
+10- If all drivers are busy the order will wait until a one driver is available.
 
-7- The driver will be updated with all the order data the he will carry.
-
-8- Driver status is "available" if he can accept order and "in transit" . if he is in his way to deliver an order.
-
-9- If all drivers are busy the order will wait until a one driver is available.
-
-10- the shop system track all driver’s status in each time tick.
 
 ##Future
 
