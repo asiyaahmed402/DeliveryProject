@@ -42,7 +42,7 @@ public class Main {
     shopSystem.registerObserver(driver8);
     shopSystem.registerObserver(driver9);
 
-    
+
     Order order1 = new Order(1, 6, 2, null, false);
     Order order2 = new Order(2, 5, 5, null, true);
     Order order3 = new Order(3, 10, 1, null, false);

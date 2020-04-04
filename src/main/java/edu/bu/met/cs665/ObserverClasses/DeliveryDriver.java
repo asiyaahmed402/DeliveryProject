@@ -2,6 +2,10 @@ package edu.bu.met.cs665.ObserverClasses;
 
 import edu.bu.met.cs665.Observable.*;
 
+/**
+ * @author Asiya Ahmed
+ * This class represents the Delivery Drivers
+ * */
 public class DeliveryDriver implements DriverObserver , DriverStatusObserver {
 
     protected int driverId;

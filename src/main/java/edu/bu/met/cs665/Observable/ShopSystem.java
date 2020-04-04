@@ -3,7 +3,10 @@ package edu.bu.met.cs665.Observable;
 import edu.bu.met.cs665.ObserverClasses.DriverObserver;
 import edu.bu.met.cs665.ObserverClasses.DeliveryDriver;
 
-
+/**
+ * @author Asiya Ahmed
+ * This class represents the shop system
+ * */
 import java.util.*;
 
 public class ShopSystem implements ShopSubject{
